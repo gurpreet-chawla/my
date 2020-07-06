@@ -5,9 +5,10 @@ import Menu from './Menu';
 
 
 
-import { BrowserRouter, Route } from 'react-router-dom';
+import { BrowserRouter, Route, Link } from 'react-router-dom';
 import Academics from './Academics';
 import Projects from './Projects';
+import Contact from './Contact';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       
        <Route path="/academics" component={Academics} />
        <Route path="/projects" component={Projects} />
+       <Route path="/contact" component={Contact} />
        
        </switch>
     
@@ -35,9 +37,9 @@ const Home = () => {
                    <img src={process.env.PUBLIC_URL + "/hello1.png"} 
                    alt="pic"
                    className="img"/><br/>
-                    <button type="button" class="btn btn-danger btn-lg" id="linkedin">
+                  <a href={ 'https://www.linkedin.com/in/gurpreet-singh-6a2880176/'} target="_blank">  <button type="button" class="btn btn-danger btn-lg" id="linkedin">
                                 Check Me Out On <strong>LINKEDIN</strong>
-                    </button>
+                    </button></a>
                </div>
 
                <div id="image2">
@@ -51,7 +53,7 @@ const Home = () => {
                 <div> <div className="split" id="split2">
                             <div className="cen">
                                   “CENTRED BRAIN GURPREET CHAWLA"<br/><br/> <pre className="wor">“WORKING WITH<br/>PASSION, WHILE<br/>EXPLORING THE <br/>          WEB” </pre>
-                                  <button type="button" id="con" className="btn btn-danger btn-lg"><strong>CONTACT ME</strong></button>
+                              <Link to ='Contact'>    <button type="button" id="con" className="btn btn-danger btn-lg"><strong>CONTACT ME</strong></button></Link>
                             </div>
                             
 
@@ -197,8 +199,8 @@ Wish him on Youtube, Instagram, Facebook  </div>
                           <span className="faq2">
                               <div >
                           <h2> What is Gurpreet Chawla’s life journey?</h2>
-                          Sahil started his life as a “perfectly imperfect” child with many flaws.
-                          His teachers encouraged him a lot Being a Punjabi, humor is his born talent and hence, ended up being a standup comedian too He always loved science So he did his bachelor’s in mechanical engineering.
+                          Gurpreet started his life as a “perfectly imperfect” child with many flaws.
+                          His teachers encouraged him a lot Being a Punjabi, humor is his born talent and hence, ended up being a standup comedian too. He always loved science So he did his bachelor’s in mechanical engineering.
                                 </div><br/><br/><br/>
                                 <div className="r" id="s">
                                     <h2> Height of Gurpreet Chawla?   </h2>
@@ -235,10 +237,6 @@ He lives in your                        Mr. Kulvir Chawla
                                     <div className="r" id="s">
                                     <h2> Who are Gurpreet Chawla’s parents?</h2>
                                     He lives in your hearts but if you are looking for a postal address sorry, we cannot mention that.
-                                    </div>
-                                    <div className="r" id="s">
-                                    <h2> What is Gurpreet Chawla’s Instagram handle?</h2>
-                                    Gurpreet can be reached on Instagram, the username is guru469chawla but he isn’t that active. Try your luck.
                                     </div>
                                     
                          </span>
